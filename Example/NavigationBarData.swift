@@ -12,7 +12,7 @@ struct NavigationBarData {
     
     static let BarTintColorArray: [NavigationBarBackgroundViewColor] = [.Cyan, .Yellow, .Green, .Orange, .lightGray, .NoValue]
     static let BackgroundImageColorArray: [NavigationBarBackgroundViewColor] = [.NoValue, .Transparent, .Cyan, .Yellow, .Green, .Orange, .lightGray]
-    static let TintColorArray: [NavigationBarBackgroundViewColor] = [.Orange, .lightGray, .Green, .Yellow, .Cyan]
+    static let TintColorArray: [NavigationBarBackgroundViewColor] = [.NoValue, .Orange, .lightGray, .Green, .Yellow, .Cyan]
     
     var barTintColor = NavigationBarData.BarTintColorArray.first!
     var backgroundImageColor = NavigationBarData.BackgroundImageColorArray.first!
