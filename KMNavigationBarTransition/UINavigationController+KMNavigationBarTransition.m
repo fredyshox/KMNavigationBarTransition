@@ -90,7 +90,9 @@
     [disappearingViewController km_addTransitionNavigationBarIfNeeded];
     UIViewController *appearingViewController = self.viewControllers[self.viewControllers.count - 2];
     if (appearingViewController.km_transitionNavigationBar) {
+        // TODO
         UINavigationBar *appearingNavigationBar = appearingViewController.km_transitionNavigationBar;
+        [self.navigationBar setTintColor: appearingNavigationBar.tintColor];
         self.navigationBar.barTintColor = appearingNavigationBar.barTintColor;
         [self.navigationBar setBackgroundImage:[appearingNavigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
         self.navigationBar.shadowImage = appearingNavigationBar.shadowImage;
@@ -108,8 +110,10 @@
     UIViewController *disappearingViewController = self.viewControllers.lastObject;
     [disappearingViewController km_addTransitionNavigationBarIfNeeded];
     if (viewController.km_transitionNavigationBar) {
+        // TODO
         UINavigationBar *appearingNavigationBar = viewController.km_transitionNavigationBar;
         self.navigationBar.barTintColor = appearingNavigationBar.barTintColor;
+        [self.navigationBar setTintColor: appearingNavigationBar.tintColor];
         [self.navigationBar setBackgroundImage:[appearingNavigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
         self.navigationBar.shadowImage = appearingNavigationBar.shadowImage;
     }
@@ -127,8 +131,10 @@
     [disappearingViewController km_addTransitionNavigationBarIfNeeded];
     UIViewController *rootViewController = self.viewControllers.firstObject;
     if (rootViewController.km_transitionNavigationBar) {
+        // TODO
         UINavigationBar *appearingNavigationBar = rootViewController.km_transitionNavigationBar;
         self.navigationBar.barTintColor = appearingNavigationBar.barTintColor;
+        [self.navigationBar setTintColor: appearingNavigationBar.tintColor];
         [self.navigationBar setBackgroundImage:[appearingNavigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
         self.navigationBar.shadowImage = appearingNavigationBar.shadowImage;
     }
