@@ -126,7 +126,7 @@
     if (!self.navigationController.navigationBar) {
         return;
     }
-    // TODO Here
+    // Setting navigation bar properties
     [self km_adjustScrollViewContentOffsetIfNeeded];
     UINavigationBar *bar = [[UINavigationBar alloc] init];
     bar.km_isFakeBar = YES;
